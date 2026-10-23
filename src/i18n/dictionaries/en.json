@@ -1,0 +1,312 @@
+{
+  "meta": {
+    "title": "Learning",
+    "description": "A learning dashboard. Math: limits, derivatives, integrals, differential equations, series, continuity, partial derivatives and multiple integrals."
+  },
+  "app": {
+    "title": "Learning"
+  },
+  "nav": {
+    "subjects": "Subjects",
+    "comingSoon": "More subjects coming soon."
+  },
+  "subjects": {
+    "math": {
+      "name": "Math",
+      "description": "Calculus solver — exact closed-form answers when possible, accurate numerics otherwise.",
+      "topics": "Math topics"
+    },
+    "chemistry": {
+      "name": "Chemistry",
+      "description": "Periodic table, molar masses, equation balancing and the ideal gas law.",
+      "topics": "Chemistry topics"
+    }
+  },
+  "tabs": {
+    "limit": { "name": "Limit", "description": "Two- and one-sided limits at a point or at ±∞." },
+    "derivative": { "name": "Derivative", "description": "Symbolic derivatives up to 4th order, with the tangent line at a point." },
+    "integral": { "name": "Integral", "description": "Definite integrals by adaptive Gauss–Kronrod, including infinite bounds." },
+    "ode": { "name": "Differential Eq.", "description": "First- and second-order initial-value problems solved with RK4." },
+    "series": { "name": "Series & Sequences", "description": "Limits of sequences and convergence tests for infinite series." },
+    "continuity": { "name": "Continuity", "description": "Classify a point, or scan an interval for discontinuities." },
+    "partial": { "name": "Partial Derivatives", "description": "Gradients, second partials and critical-point classification." },
+    "multiple": { "name": "Multiple Integrals", "description": "Double and triple integrals with variable inner bounds." }
+  },
+  "common": {
+    "function": "Function",
+    "variable": "Variable",
+    "point": "Point",
+    "pointOptional": "Point (optional)",
+    "from": "From",
+    "to": "To",
+    "examples": "Examples",
+    "result": "Result",
+    "computing": "Computing…",
+    "value": "Value",
+    "estimatedError": "Estimated error",
+    "evaluations": "Evaluations",
+    "approx": "≈ {value}",
+    "boundsHint": "Numbers, expressions like pi/2, or inf / -inf.",
+    "symbolsHint": "Use ln, sqrt, sin, e, pi … and ^ for powers.",
+    "chart": "Chart",
+    "samples": "Samples",
+    "errorTitle": "Can't compute this",
+    "yes": "✓",
+    "no": "✗"
+  },
+  "errors": {
+    "empty": "Enter an expression.",
+    "parse": "Could not parse the expression: {detail}",
+    "unknownSymbol": "Unknown symbol \"{name}\" — expected {expected}.",
+    "unknownFunction": "Unknown function \"{name}\".",
+    "badNumber": "\"{value}\" is not a valid number.",
+    "badVariable": "\"{name}\" is not a valid variable name.",
+    "duplicateVariable": "Variable \"{name}\" is listed twice.",
+    "pointArity": "Expected {expected} coordinates, got {got}.",
+    "badStart": "The starting index must be an integer.",
+    "emptyFormula": "Enter a chemical formula.",
+    "unknownElement": "Unknown element \"{symbol}\".",
+    "badFormula": "Unexpected \"{char}\" at position {pos}.",
+    "unbalancedParen": "Brackets are not balanced.",
+    "noArrow": "Separate reactants and products with -> or =.",
+    "emptySide": "Both sides need at least one substance.",
+    "cannotBalance": "This equation cannot be balanced.",
+    "ambiguousBalance": "This equation has more than one independent way to balance it — split it into separate reactions.",
+    "elementOneSide": "Element {symbol} appears on only one side.",
+    "gasUnknowns": "Leave exactly one of P, V, n, T empty.",
+    "gasBadValue": "\"{value}\" is not a valid value.",
+    "unexpected": "Unexpected error: {detail}"
+  },
+  "limit": {
+    "approach": "Approaches",
+    "direction": "Direction",
+    "both": "Two-sided",
+    "left": "From the left",
+    "right": "From the right",
+    "isValue": "The limit exists.",
+    "isInfinite": "The function grows without bound.",
+    "isUndefined": "The function is not defined near this point.",
+    "reason": {
+      "sidesDiffer": "Does not exist: the one-sided limits differ.",
+      "oscillates": "Does not exist: the function oscillates and does not settle.",
+      "leftUndefined": "Does not exist: f is not defined to the left.",
+      "rightUndefined": "Does not exist: f is not defined to the right."
+    },
+    "side": {
+      "value": "→ {value}",
+      "inf": "→ {value}",
+      "undefined": "not defined on this side",
+      "oscillates": "oscillates / does not settle"
+    },
+    "leftSamples": "From the left",
+    "rightSamples": "From the right"
+  },
+  "derivative": {
+    "order": "Order",
+    "nth": "f⁽ⁿ⁾",
+    "numericOnly": "No symbolic form — values use central finite differences.",
+    "atPoint": "At x = {a}",
+    "fa": "f({a})",
+    "notDifferentiable": "Not differentiable at x = {a}.",
+    "tangent": "Tangent line",
+    "legendF": "f",
+    "legendD": "derivative of order {n}",
+    "legendTangent": "tangent"
+  },
+  "integral": {
+    "lower": "Lower bound",
+    "upper": "Upper bound",
+    "diverges": "Diverges — the integral does not converge.",
+    "undefined": "Undefined on part of the region."
+  },
+  "ode": {
+    "order": "Order",
+    "first": "1st order  y′ = f(x, y)",
+    "second": "2nd order  y″ = f(x, y, yp)",
+    "rhs1": "y′ =",
+    "rhs2": "y″ =",
+    "x0": "x₀",
+    "y0": "y(x₀)",
+    "yp0": "y′(x₀)",
+    "x1": "Solve to x₁",
+    "ypHint": "Use yp for y′.",
+    "blowup": "Escapes to infinity near x ≈ {x}.",
+    "valueAt": "y({x})",
+    "slopeAt": "y′({x})",
+    "method": "RK4 with 1000 and 2000 steps; error ≈ |y₂₀₀₀ − y₁₀₀₀| / 15.",
+    "legendSolution": "solution y(x)",
+    "legendField": "slope field"
+  },
+  "series": {
+    "mode": "Mode",
+    "sequence": "Sequence",
+    "series": "Series",
+    "term": "Term aₙ",
+    "start": "Start n₀",
+    "converges": "Converges",
+    "diverges": "Diverges",
+    "undefined": "A term is not finite at n = {n}.",
+    "sum": "Sum",
+    "termLimit": "lim aₙ",
+    "test": {
+      "nthTerm": "n-th term test: aₙ does not tend to 0.",
+      "ratio": "Ratio test: |aₙ₊₁/aₙ| ≈ {ratio}.",
+      "integral": "Integral test on [n₀ + 1000, ∞).",
+      "alternating": "Alternating series test.",
+      "partialSums": "Behaviour of averaged partial sums."
+    },
+    "exactSum": "Terms reach exactly 0, so the partial sum is the exact sum.",
+    "partialSums": "Partial sums Sₙ",
+    "evenSamples": "n = 10ᵏ",
+    "oddSamples": "n = 10ᵏ + 1",
+    "legendTerms": "aₙ",
+    "legendPartial": "Sₙ"
+  },
+  "continuity": {
+    "mode": "Mode",
+    "atPoint": "At a point",
+    "scan": "Scan an interval",
+    "conditions": "Conditions",
+    "defined": "f(a) is defined",
+    "limitExists": "lim f(x) exists",
+    "equals": "lim f(x) = f(a)",
+    "fromRightOnly": "Continuous from the right only.",
+    "fromLeftOnly": "Continuous from the left only.",
+    "jumpSize": "Jump of {size}",
+    "none": "No discontinuities found in this interval.",
+    "found": "{count} discontinuities",
+    "kind": {
+      "continuous": "Continuous",
+      "removable": "Removable",
+      "jump": "Jump",
+      "infinite": "Infinite (vertical asymptote)",
+      "oscillating": "Oscillating",
+      "boundary": "Domain boundary",
+      "notDefined": "Not defined"
+    }
+  },
+  "partial": {
+    "variables": "Variables",
+    "pointHint": "Comma-separated, one value per variable.",
+    "first": "First partials",
+    "second": "Second partials",
+    "gradient": "∇f",
+    "norm": "|∇f|",
+    "critical": "Critical point",
+    "kind": {
+      "min": "Local minimum",
+      "max": "Local maximum",
+      "saddle": "Saddle point",
+      "inconclusive": "Inconclusive (second-derivative test)"
+    },
+    "heatmap": "Heat map of f around the point; the arrow is ∇f."
+  },
+  "multiple": {
+    "dims": "Type",
+    "double": "Double ∬",
+    "triple": "Triple ∭",
+    "boundsFor": "{v} from",
+    "innerHint": "Inner bounds may use outer variables, e.g. -sqrt(1-x^2).",
+    "region": "Region preview",
+    "diverges": "Diverges — the integral does not converge.",
+    "undefined": "Undefined on part of the region."
+  },
+  "chemistry": {
+    "tabs": {
+      "periodic": { "name": "Periodic Table", "description": "All 118 elements — search, filter by category and inspect each one." },
+      "molarMass": { "name": "Molar Mass", "description": "Molar mass and composition of a formula, plus grams → moles → particles." },
+      "balance": { "name": "Balance Equation", "description": "Find the smallest whole-number coefficients that balance a reaction." },
+      "gas": { "name": "Ideal Gas Law", "description": "Solve PV = nRT for whichever quantity you leave empty." }
+    },
+    "category": {
+      "alkali": "Alkali metal",
+      "alkaline": "Alkaline earth metal",
+      "transition": "Transition metal",
+      "postTransition": "Post-transition metal",
+      "metalloid": "Metalloid",
+      "nonmetal": "Nonmetal",
+      "halogen": "Halogen",
+      "noble": "Noble gas",
+      "lanthanide": "Lanthanide",
+      "actinide": "Actinide"
+    },
+    "periodic": {
+      "search": "Search",
+      "searchHint": "Name, symbol or atomic number",
+      "details": "Element",
+      "atomicNumber": "Atomic number",
+      "atomicMass": "Atomic mass (u)",
+      "group": "Group",
+      "period": "Period",
+      "category": "Category",
+      "massNote": "[ ] mass number of the most stable isotope."
+    },
+    "molar": {
+      "formula": "Formula",
+      "formulaHint": "e.g. H2O, Ca(OH)2, CuSO4·5H2O. Symbols are case-sensitive.",
+      "sample": "Sample mass in g (optional)",
+      "moles": "Amount",
+      "particles": "Particles",
+      "composition": "Composition by mass",
+      "element": "Element",
+      "count": "Atoms",
+      "mass": "Mass (g/mol)"
+    },
+    "balance": {
+      "equation": "Equation",
+      "hint": "Type, or build it with the keypad below. Separate substances with + and sides with -> or →.",
+      "preview": "Preview",
+      "keypad": "Symbols",
+      "allElements": "Show all 118 elements",
+      "commonOnly": "Show common elements only",
+      "backspace": "Delete",
+      "clear": "Clear",
+      "result": "Balanced equation",
+      "ratio": "Mole ratio",
+      "massCheck": "Mass conserved",
+      "substances": "Substances",
+      "substance": "Substance",
+      "side": "Side",
+      "reactant": "Reactant",
+      "product": "Product",
+      "coefficient": "Coefficient",
+      "totalMass": "Coefficient × M (g)",
+      "check": "Atom check",
+      "reactants": "Reactants",
+      "products": "Products"
+    },
+    "gas": {
+      "instructions": "Fill in three quantities and leave one empty.",
+      "pressureUnit": "Pressure unit",
+      "temperatureUnit": "Temperature unit",
+      "P": "Pressure",
+      "V": "Volume",
+      "n": "Amount",
+      "T": "Temperature",
+      "constant": "R = {R} L·atm/(mol·K)",
+      "examples": {
+        "stp": "V of 1 mol at STP",
+        "room": "n in 10 L at 25 °C",
+        "pressure": "P of 2 mol in 5 L",
+        "temperature": "T of 0.5 mol in 12 L"
+      }
+    },
+    "elements": {
+      "H": "Hydrogen", "He": "Helium", "Li": "Lithium", "Be": "Beryllium", "B": "Boron", "C": "Carbon", "N": "Nitrogen", "O": "Oxygen",
+      "F": "Fluorine", "Ne": "Neon", "Na": "Sodium", "Mg": "Magnesium", "Al": "Aluminium", "Si": "Silicon", "P": "Phosphorus", "S": "Sulfur",
+      "Cl": "Chlorine", "Ar": "Argon", "K": "Potassium", "Ca": "Calcium", "Sc": "Scandium", "Ti": "Titanium", "V": "Vanadium", "Cr": "Chromium",
+      "Mn": "Manganese", "Fe": "Iron", "Co": "Cobalt", "Ni": "Nickel", "Cu": "Copper", "Zn": "Zinc", "Ga": "Gallium", "Ge": "Germanium",
+      "As": "Arsenic", "Se": "Selenium", "Br": "Bromine", "Kr": "Krypton", "Rb": "Rubidium", "Sr": "Strontium", "Y": "Yttrium", "Zr": "Zirconium",
+      "Nb": "Niobium", "Mo": "Molybdenum", "Tc": "Technetium", "Ru": "Ruthenium", "Rh": "Rhodium", "Pd": "Palladium", "Ag": "Silver", "Cd": "Cadmium",
+      "In": "Indium", "Sn": "Tin", "Sb": "Antimony", "Te": "Tellurium", "I": "Iodine", "Xe": "Xenon", "Cs": "Caesium", "Ba": "Barium",
+      "La": "Lanthanum", "Ce": "Cerium", "Pr": "Praseodymium", "Nd": "Neodymium", "Pm": "Promethium", "Sm": "Samarium", "Eu": "Europium", "Gd": "Gadolinium",
+      "Tb": "Terbium", "Dy": "Dysprosium", "Ho": "Holmium", "Er": "Erbium", "Tm": "Thulium", "Yb": "Ytterbium", "Lu": "Lutetium", "Hf": "Hafnium",
+      "Ta": "Tantalum", "W": "Tungsten", "Re": "Rhenium", "Os": "Osmium", "Ir": "Iridium", "Pt": "Platinum", "Au": "Gold", "Hg": "Mercury",
+      "Tl": "Thallium", "Pb": "Lead", "Bi": "Bismuth", "Po": "Polonium", "At": "Astatine", "Rn": "Radon", "Fr": "Francium", "Ra": "Radium",
+      "Ac": "Actinium", "Th": "Thorium", "Pa": "Protactinium", "U": "Uranium", "Np": "Neptunium", "Pu": "Plutonium", "Am": "Americium", "Cm": "Curium",
+      "Bk": "Berkelium", "Cf": "Californium", "Es": "Einsteinium", "Fm": "Fermium", "Md": "Mendelevium", "No": "Nobelium", "Lr": "Lawrencium", "Rf": "Rutherfordium",
+      "Db": "Dubnium", "Sg": "Seaborgium", "Bh": "Bohrium", "Hs": "Hassium", "Mt": "Meitnerium", "Ds": "Darmstadtium", "Rg": "Roentgenium", "Cn": "Copernicium",
+      "Nh": "Nihonium", "Fl": "Flerovium", "Mc": "Moscovium", "Lv": "Livermorium", "Ts": "Tennessine", "Og": "Oganesson"
+    }
+  }
+}
